@@ -30,9 +30,11 @@ do{
 
 } while(corte != 1 && corte != 2);
 
-let pago = prompt('Con cuanto vas a pagar ?');
+let pago = 0;
 
 do {
+
+    pago = prompt('Con cuanto vas a pagar ?');
 
     if(pago < precio){
 
