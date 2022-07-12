@@ -1,4 +1,4 @@
-const nombre = prompt('Ingresa tu nombre');
+/* const nombre = prompt('Ingresa tu nombre');
 
 alert(`Hola ${nombre}, bienvenido a la peluqueria Liverpool`);
 
@@ -48,4 +48,30 @@ do {
 
     }
 
-} while (pago < precio);
+} while (pago < precio); */
+
+const array = [
+    {   id: 1,
+        name: 'mouse',
+        price: 20,
+    },
+    {   id: 2,
+        name: 'teclado',
+        price: 15,
+    },
+    {   id: 3,
+        name: 'monitor',
+        price: 40,
+    },
+    {   id: 4,
+        name: 'procesador',
+        price: 45,
+    }
+]
+
+let borrar = prompt ('ingresa el ID del producto que deseas borrar 1/2/3/4')
+const findProduct = (array.find(item => item.id == borrar))
+const productIndex = array.indexOf(findProduct)
+array.splice(productIndex, 1)
+
+console.log(array)
